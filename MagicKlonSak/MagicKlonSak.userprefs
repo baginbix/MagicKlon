@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Players\Movment.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Players\ManaScript.cs" Line="16" Column="15" />
+      <File FileName="Assets\Scripts\Players\SummonMinions.cs" Line="73" Column="3" />
+      <File FileName="Assets\Scripts\Minions\BaseUnit.cs" Line="96" Column="20" />
+      <File FileName="Assets\Scripts\Players\Movment.cs" Line="14" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
