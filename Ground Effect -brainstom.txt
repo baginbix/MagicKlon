@@ -1,0 +1,23 @@
+? = vilken faktion man vill
+Bla = placeholder för namnet.
+
+Molten ground: (eld)
+gör periodvis dmg till motståndar groundunits.
+
+Swamp: (vatten)
+slowar fiender groundunits.
+
+Runic ground: (jord)
+buffar stats på friendly groundunits(typ mer armor eller liknande).
+
+Bla: (vind)
+minskar rangen på alla fiende units(air och ground).
+
+Bla: (?)
+healar periodvis friendly units(kanske air units me).
+
+Bla: (?)
+ge haste till friendly groundunits.
+
+bla:(?)
+tar periodvis bort armor från friende groundunits.

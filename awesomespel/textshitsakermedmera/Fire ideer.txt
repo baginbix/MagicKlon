@@ -1,0 +1,139 @@
+units/spells/cooltshit
+
+
+eld faktion
+
+
+ideer: main caster har en spell som heter typ burning ember
+ger friendly units i en area stacks av burning ember vilket ger olika effekter beroende på vilken unit det är.
+typ alla eller många units inom fire faktionen kommer använda sig av burning ember.
+även units kommer kunna ge ifrån sig burning ember.
+
+units!:
+
+
+
+Magma elemental 
+
+1 atk,1 hp,0 armbreak,0 arm, range: Melee
+
+Mana cost:low.
+
+Effects: build 2 at a time.
+Burning ember: each stack of burning ember give magma elemental +1 hp.
+
+
+
+Magma surge
+
+2 atk,3 hp,0 armbreak,0 arm, range: melee
+
+Mana cost:low-medium.
+
+Effects: Surge: Magma surge moves towards target target becoming immune to all dmg
+and effects and leaving a trail of fire that deal dmg to enemy. 
+Burning ember: use surge and use a charge of burning ember(max stacks 1).
+
+
+
+Unstable magma  
+
+2 atk,1 hp,0 armbreak,0 arm, range: Melee
+
+Mana cost: medium.
+
+Effects: Explode: When Unstable magma dies it deals aoe dmg to enemy around itself.
+as well as giving giving a stack of burning ember to all friendly units hit(ground only). 
+Burning ember: 1 stack: give a stack of burning ember to all friendly units hit(ground only).
+3 stacks: explode will give friendly units+1 arm for 5 sec.
+
+
+
+Magma giant
+
+4 atk,7 hp,1 armbreak,1 arm, range: Melee
+
+Mana cost:High.
+
+Effects: Molten regeneration: Heal Magma giant for 2hp(cost 1 stack of burning ember), 
+Molten regeneration will trigger whenever molten giant have taken 2 or more dmg(max 5 stacks).
+Burning ember: First stack gives Magma giant +1 arm(max stack=5).
+
+
+
+Merged magma
+
+2 atk,3 hp,0 armbreak,0 arm, range: Melee
+
+Mana cost:Medium.
+
+Effects: Split: When Merged magma dies he summons Magma elementals
+depending on the number of burning ember stacks.
+Burning ember: 
+0 stacks = 2 Magma elementals(with zero burning ember stacks)
+1 stacks = 2 Magma elementals(with one burning ember stack)
+2 stacks = 3 Magma elementals(with one burning ember stack)
+3 stacks = 3 Magma elementals(with two burning ember stacks)
+(max stack=3).
+
+
+
+Magma wisp
+
+1 atk,3 hp,1 armbreak,0 arm, range: Medium
+
+Flying
+
+Mana cost:Medium.
+
+Effects: Magma whip: Channel 4 sec stun that deal 2 dmg over the duration
+(cost one burning ember stack, has cooldown).
+
+
+
+Magma dragon
+
+4 atk,4 hp,1 armbreak,1 arm, range: Low-medium
+
+Flying
+
+Mana cost:High.
+
+Effects: None.
+
+
+
+Witch of the flame
+
+3 atk,2 hp,0 armbreak,0 arm, range: High-superhigh
+
+Mana cost:High.
+
+Effects: Witch of the flames ranged attacks are ground attacks that can be avoided
+and they deal aoe dmg.
+Burning ember:Fury: Witch of the flame gain bonus attack speed for 5 sec when they gain
+a burning ember stack(don't stack and the burning ember is used as soon as it is gained,has cooldown).
+
+
+Magma priest
+
+1 atk, 4 hp, 0 armbreak, 0 arm, range: Melee
+
+manacost: Medium
+
+Effect: Magma enhancment: Give all friendly elemental type summons +1 hp,+1 atk
+in a area close to the Magma priest.
+
+
+
+SPELLS: 
+
+Warleader: give a friendly unit the warleader buff. all friendly units close to the warleader gain haste.
+
+Magmaball: creates a magmaball at the target location. The ball charges for a couple of secounds and 
+then start to bounce randomly around the battlefield. the ball deals dmg to all summons it hits and 
+knocks them back(friendly fire). it disappears after a while.
+
+
+
+ 

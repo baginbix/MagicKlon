@@ -1,0 +1,107 @@
+Idee
+
+____________________________________________________________________
+ge varje faktion en egen ground effect som dom vill sprida. 
+eld kan typ ha molten ground som gör att alla fiender tar dmg medans dom står på marken eller liknande.
+varje faktion kommer ha flera sätt att sprida sin ground effect, tex så kan man bygga en byggnad som
+skapar ground effect runt sig så länge den lever. men även spells och units kan skappa ground effect.
+
+lite olika effekter kan vara dmg over time, friendly units får +1 arm, motståndarens units blir 
+slowed med mera.
+
+obs finns mer i "map layout och annat".
+______________________________________________________________
+
+
+
+
+tankar om väggar.
+
+hur ska det funkar?. man kan göra det på flera olika sätt. kanske olika faktions 
+har walls som funkar på olika sätt. man kan har en wall som är uppbyggd av flera '
+segment och alla segmenten måste dö innan wallen förstörs.
+
+man kan också ge lite olika effekter till en wall för att göra den mer relevant.
+man kan ge den en dmg return effekt som gör att varje gång den tar dmg så gör den samma dmg tillbaka.
+eller så ger man den knockback. så varje gång någon slår på wallen så skickar den tillbaka fienden. 
+det gör att det tar massa extra tid att ta i sönder den. attackspeed slow finns med så att 
+det tar tid att förstöra den. eller så har den bara en massa armor och hp. man skulle också kunna 
+ge den immune on hit. så att den tar dmg och sedan kan inte ta skadda tills immune buffen släpper.
+
+det känns som att målet är att en wall ska kunna dela upp mapen och få saker att ändra deras 
+movement men samtidigt ska det finnas något att göra mot dom. 
+
+---------------------------------------------------------------------
+
+resurser.
+
+första tanken.
+
+2 olika resurser.1 av resurserna ska man på något sätt sammla och den andra är en resurs som man 
+får hela tiden. 
+
+resurs 1: crystals. Något man måste gathera. kommer inte användas till allt utan blir förmodligen 
+mer till tech shit. den kommer finnas utsprid över mapen vilket göra att spelarna vill pusha och 
+bli aktiva över kartan för att inte låta motståndaren få kontroll över för mycket av den. 
+förmodligen inte max limit i hur mycket man kan samla av den. 
+
+
+öppna "mana systemet"
+
+resurs 2: mana. man har en mana mätare. den fylls sakta på hela tiden. man har en max limit på hur mycket
+av mätaren som man kan ha fylld och den kommer man kunna öka medans man spelar(uppgrades med mera).
+
+brevid mäteren står det hur mycket % av hela mätaren som är fylld med mana. och alla saker kommer kosta
+% av mana så tex första uniten kanske kostar 3% av hela mana mätaren.
+
+för att göra det värt att få mer möjlig max mana så har jag tänkt att vi har det så att det alltid
+tar samma tid för en att gå från 0% till current max mana limit. det gör att om de tar 20 sec att regana från tom
+till max current så om man bara har 10% möjlig så får man mycket mindre mana per sekund jämfört med om man
+100% som max. det gör också så att ökad max limit får mer användning och det inte bara handlar om ökad manareg.
+
+--------------------------------------------------------------------------------------------------------------
+
+map layout och annat.
+
+öppna maplayout bilden.
+
+
+kartan ska vara ganska small men lång och ska försöka bygga upp en focus på att pusha fram sig själv och pusha 
+motståndaren(vill fortfarande ha möjlighet till all in strats och sånt). 
+
+men så som jag ser det så kommer man försöka pusha fram sitt egna område och få kontroll över mer resourser
+och till sin hjälp kommer man använda walls och liknande för att begränsa battlefielden och skapa strider där
+man har övertag.
+
+jag tycker också ideen om groundeffekter är cool och kan användas väl här. det blir liksom att elementen 
+försöker få sitt eget element att ta över och om man då pushar fram sin ground effekt me så blir det liksom 
+att till och med marken blir ditt element. det kan också hjälpa till att lösa vissa problem.
+just nu har vi inget som hindrar dig från att ställa dig på din motståndare och summa shit i hans face.
+men om vi gör så att du kan inte summa/bygga i motståndarens groundeffekt så kan vi ta bort det problemet.
+
+jag tänker mig att vi gör att man kan summa units och casta spells överallt förutom när man är i motståndarens
+ground effekt. och man kan bara bygga byggnader inom sin egna ground effekt
+(förutom byggnader som sprider groundeffekt).
+
+jag tänker mig också att det kommer vara ganska sakta gameplay där units inte dör allt för snabbt(till skillnad
+från mgs spelet).
+
+
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

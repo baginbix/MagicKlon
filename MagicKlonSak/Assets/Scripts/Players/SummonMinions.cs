@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 
 public class SummonMinions : MonoBehaviour {
 	public Transform prefab;
 	public float SummonRange;
+	public GameObject minionList;
 	Vector3 spawnPoint;
 	NavMeshAgent agent;
 	Vector3 defaultSpawnPoint = new Vector3(1000,1000,1000);
@@ -19,7 +21,6 @@ public class SummonMinions : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1")) {
 			GetSpawnpoint();
 		}
-
 		if(spawnPoint != defaultSpawnPoint)
 		{
 			if(CheckRange() )
@@ -60,7 +61,8 @@ public class SummonMinions : MonoBehaviour {
 
 	public void Summon()
 	{
-		Instantiate(prefab, spawnPoint, transform.rotation);
+		minionList.GetComponent<MinionList>().minionList.Add((Transform)Instantiate(prefab, spawnPoint, transform.rotation));
+		minionList.GetComponent<MinionList>().minionList[minionList.GetComponent<MinionList>().minionList.Count-1].GetComponent<BaseUnit>().OnSummon(ref minionList.GetComponent<MinionList>().minionList);
 		GetComponent<ManaScript>().CurrentMana -= prefab.GetComponent<BaseUnit>().cost;
 		spawnPoint = defaultSpawnPoint;
 		agent.enabled = false;

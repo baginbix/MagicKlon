@@ -1,0 +1,66 @@
+effects:
+
+
+DISPLACEMENT
+Pull: drar till sig summons och bryter combat lock.
+Push: puttar bort summons och bryter combatlock.
+
+STATSCHANGE
+Restore: ger tillbaka en viss summa av saknade stats fast kan bara ge till stats max limit.
+Hp, attack, armor, armorbreak debuffs/buffs: ökar max och current hp,armor,attack,armorbreak med samma mängd.
+Statsswap: byter statsvalues med varandra(attack och armor byter value, liknande).
+Basestatschange: ändrar på targetens basestats.
+
+BUFFCHANGE
+Dispel: tar bort alla buffs/debuffs.
+Dispelbuffs: tar bort alla buffs från targeten(inte debuffs).
+Dispeldebuffs: tar bort alla debuffs från targeten(inte buffs).
+
+SPELLDMG
+Dmg spells: gör dmg(minskas av armor/spellresist).
+True dmg spells: gör alltid samma dmg.
+
+IMMUNE/RESIST
+Rangeblock: gör sig immune mot ranged anfall.
+Physicalimmunity: gör dig immune mot allt förutom spelldmg.
+Spellresist: tar mindre dmg från spells(funkar inte på true dmg spells).
+Spellshield: blockar spelleffects.
+SpellBounce: skickar tillbaka spelleffects till motståndaren.
+
+RETURNEFFECTS
+Dmg return: gör dmg tillbaka till den som slår/använder spells på dig.
+Statschange on being hit: minskar motståndarens/egen stats(attack, armorbreak, hp, armor) varje gång uniten blir slagen.
+
+COMBATLOCKCHANGER
+Taunt: tar combatlock från andra units som är i combatlock.
+Sharedcombat: kan vara med och slåss med units som är i combatlock.
+Combatlockignore: ignorerar fiender och går mot sin target(andra units kan slå på den medans den springer??)
+
+AICHANGE
+Confuse: ser inte skillnad på friendly och enemy units.
+Betray: byter sida och går med motståndaren.
+Newtarget: går inte efter maincastern utan har ett eget mål som dom siktar efter.
+
+STATUSEFFECTS
+Stun: gör så uniten inte kan röra sig eller slå tillbaka(så om någon slår på den så får den fria slag)
+Root: gör så uniten inte kan röra sig men fortfarande kan slåss.
+Silence: gör så träffade targets inte kan använda spells.
+Haste: ökar move speed och/eller attack speed till någon summa(typ 2 anfall per round).
+Slow: sänkar move speed och/eller attack speed.
+Burn: förlorar hp i en jämn interval.
+Curse: förlorar stats i en jämn interval.
+Fear: får uniten att backa/fly och ignora combatlock.
+Stealth: motståndaren kan inte se uniten medans den är i stealth(kan inte använda singletarget saker på den).
+Healblock: uniten kan inte bli healad.
+Buffblock: uniten kan inte bli buffad.
+
+ON HIT EFFECTS
+Cleave: gör dmg på andra targets än den som blir slagen(kort range).
+Lifesteal: får hp varje gång uniten slår någon.
+Statschange on hit: ändrar motståndarens/egen stats varje gång den träffar någon(attack, armorbreak, hp, armor).
+
+FLYING
+Fly: uniten flyger, när något har fly så kan den bara slåss mot vissa motståndare och bara bli träffade av vissa spells.
+
+DEATHTRIGGERS
+Deatheffects: effekter som händer när uniten dör(kan vara att andra units summas eller liknande).

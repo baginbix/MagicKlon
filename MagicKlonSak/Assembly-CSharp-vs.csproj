@@ -46,8 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Minions\BaseUnit.cs" />
+     <Compile Include="Assets\FireEmberSpell.cs" />
+     <Compile Include="Assets\ManaBar.cs" />
+     <Compile Include="Assets\MinionList.cs" />
+     <Compile Include="Assets\Prefabs\Units\BaseUnit.cs" />
      <Compile Include="Assets\Scripts\Minions\Chase.cs" />
+     <Compile Include="Assets\Scripts\Minions\IUnit.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\ArmorBreakScript.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\ArmorScript.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\AttackScript.cs" />

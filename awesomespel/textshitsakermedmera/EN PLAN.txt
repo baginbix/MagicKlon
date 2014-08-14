@@ -1,0 +1,34 @@
+DET VI HAR
+summa shit
+dom har stats
+combat
+man kan röra sig
+har main castern(inte helt färdig)
+resurser(manasystemet)
+
+DET VI SKA GÖRA FÖR ATT KUNNA SPELA
+
+mer enheter
+göra färdigt main castern
+fixa så båda sidor kan summa med mera.
+
+EFTER DET
+göra resurser(crystal systemet)
+lägga in spells(buffs med mera)
+ge units abilitys om dom ska ha de.
+ännu mer enheter
+fixa modeller med mera
+byggnader
+fixa ground effects
+lägg in uppgrades
+gör menyer
+fixa en bra ui
+fixa bättre sätt att summa än att spammklicka
+networking
+mer banor?
+fixa alla faktions
+lägg in alla spells och units och byggnader.
+
+OCH SEN KANSKE
+talents och andra coola saker som finns i vår brainstorming
+

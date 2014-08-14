@@ -1,0 +1,55 @@
+saker vi vill ha:
+2 resurser
+olika unit types(caster, melee, ranged, air units, helper units)
+ranged attacks
+byggnader(väggar,torn med mera)
+spells
+summons
+idle
+prioritylist för unit targets
+
+
+random ideer:
+inte ha planhalvor
+dmg/inte dmg i motståndarens zone
+inte respawna units efter strid
+multistrider mellan units(1 unit tankar och andra kan vara med och slå på den)
+talenttree
+lvls (xp)
+maincaster kan vara med och slåss
+2v2, ffa
+något sätt att få tillbaka hp på sin main caster(lifesteal,hp reg)
+måste techa up för att kunna ha better units/spells
+något sätt att öka sin ekonomi för att få mer sätt att spela
+spells som kan skicka runt units på olika sätt
+units som kan hoppa över walls
+units som summa på olika sätt(brevid caster, skicka in dom längre fram, från byggnader)
+heals kan heala mer än buffs fast buffs kan ge hp över normala gränsen
+buffs försvinner inte när units respawnar
+rewards för att döda.
+
+random ideer som vi gillar:
+zonecontroll spells och byggnader
+hemmazoner
+gråzoner som går att ta över
+enheter som inte har spelar som mål
+längre bana
+armor/armorbreak på units
+bara summa units i sin egen zone
+cleave
+matchen inte är slut när caster dör(typ summa super unit när man dör med mera)
+ground attacks(target är på marken under uniten så den kan missa)
+
+
+saker att testa:
+ranged attacks
+2 resurser
+byggnader(väggar,torn med mera)
+hemmazoner
+gråzoner som går att ta över
+combatlock/inte combatlock
+inte respawna units efter strid
+multistrider mellan units(1 unit tankar och andra kan vara med och slå på den)
+matchen inte är slut när caster dör(typ summa super unit när man dör med mera)
+ground attacks(target är på marken under uniten så den kan missa)
+units som inte går i combatlock förutom när dom har nått sin target

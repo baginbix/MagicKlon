@@ -1,0 +1,18 @@
+Alla units och byggnader kommer ha 4a olika stats.
+Det är attack,hp, armor, armorbreak.
+
+Attack funkar så att för varje attack en unit har när den slår så
+försvinner 1 hp från motståndaren.
+
+Hp är hur mycket liv en unit har. När hp blir 0 så dör den.
+
+Armor minskar 1 skada per armor man har, så om någon slår dig mig som har
+2 attack och man själv har 1 armor så förlorar man bara 1 Hp.
+
+Armor break är att efter att skadan har hänt i en combat round så går 
+armor break igång och tar bort 1 armor för varje armor break man har.
+
+Jag tänkte också att units ska inte kunna stacka buffs utan om en unit har en buff
+och samma buff träffar den igen så händer inget. det är för att undvika buffstack som gör
+att den sämsta uniten kan bli mega buffad och vara starkare än allt annat. Det gör också
+att heals får mer effekt för att man inte bara spammar buffs som ett sätt att heala.

@@ -1,0 +1,51 @@
+bla = har inget bra namn än.
+? = kan vara till vilkan faktion man vill typ.
+
+
+Spell: Bla (eld)
+ge friendly units i en area 1 stack med burning ember.
+
+Spell: bla (?)
+Ge en unit "Phaze" status. "phaze gör att en unit inte kan anfalla
+eller bli anfallen samt den kan röra sig igenom andra units och liknande.
+
+Spell: Meltdown (eld)
+smälter marken runt caster. alla fiender som blir träffade förlorar armor och blir stunnade.
+
+Spell: Liftoff (eld)
+välj en target och kasta den till valfri plats inom en viss range.
+
+Spell: Bla (?)
+gör dmg mot vald fiende.
+
+Spell: Bla (?)
+ge en target unit sköld hp(går inte att heala upp det hp).
+när det här hp tar slut så blir alla fiende units knockbacked.
+
+Spell: bla (?)
+ge en target "haste" som varar ett litet tag. Haste ökar movespeed och attackspeed.
+
+Spell: bla (?)
+skjuter bolts mot dom 5 närmaste fiende summonsen. om en av dom dör så väljs en ny target.
+fortsätter skjuta tills man har slut på bolts eller summons.
+
+Spell: bla (?)
+ge en friendly unit mer armor och hp.
+
+Spell: Razorwinds (vind)
+summar en massa razorwinds vid valfri plats. razorwinds är summons
+med lågt i alla stats förutom armorbreak.
+
+Spell: Aktivate(?)
+aktiverar en summons ability.
+
+Spell: Comet(eld)
+stunnar och gör dmg till alla units i en area.
+
+Spell: Warleader(?)
+ger haste till units inom en area runt warleadern.
+
+Spell: Magmaball (eld)
+en magmaball spawnar vid target platsen. den laddar ett par sekunder och sedan börjar den rulla runt spellplanen
+helt random. den stutsar på väggar och gör dmg och knockback till alla units som träffas. 
+försvinner efter ett tag.
