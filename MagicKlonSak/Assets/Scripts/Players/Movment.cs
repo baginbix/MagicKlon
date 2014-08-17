@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Movment : MonoBehaviour {
-	public Transform transform;
+	public Transform m_transform;
 	public float speed;
 	// Use this for initialization
 	void Start () {
@@ -20,22 +20,22 @@ public class Movment : MonoBehaviour {
 		{
 			if(Input.GetKey(KeyCode.A))
 			{
-				transform.Translate(new Vector3(-speed,0,0)*Time.deltaTime);
+				m_transform.Translate(new Vector3(-speed,0,0)*Time.deltaTime);
 				GetComponent<SummonMinions>().CancelMovment();
 			}
 			if(Input.GetKey(KeyCode.D))
 			{
-				transform.Translate(new Vector3(speed,0,0)*Time.deltaTime);
+				m_transform.Translate(new Vector3(speed,0,0)*Time.deltaTime);
 				GetComponent<SummonMinions>().CancelMovment();
 			}
 			if(Input.GetKey(KeyCode.W))
 			{
-				transform.Translate(new Vector3(0,0,speed)*Time.deltaTime);
+				m_transform.Translate(new Vector3(0,0,speed)*Time.deltaTime);
 				GetComponent<SummonMinions>().CancelMovment();
 			}
 			if(Input.GetKey(KeyCode.S))
 			{
-				transform.Translate(new Vector3(0,0,-speed)*Time.deltaTime);
+				m_transform.Translate(new Vector3(0,0,-speed)*Time.deltaTime);
 				GetComponent<SummonMinions>().CancelMovment();
 			}
 		}
@@ -44,24 +44,24 @@ public class Movment : MonoBehaviour {
 		{
 			if(Input.GetKey(KeyCode.LeftArrow))
 			{
-				transform.Translate(new Vector3(-speed,0,0)*Time.deltaTime);
+				m_transform.Translate(new Vector3(-speed,0,0)*Time.deltaTime);
 			}
 			if(Input.GetKey(KeyCode.RightArrow))
 			{
-				transform.Translate(new Vector3(speed,0,0)*Time.deltaTime);
+				m_transform.Translate(new Vector3(speed,0,0)*Time.deltaTime);
 			}
 			if(Input.GetKey(KeyCode.UpArrow))
 			{
-				transform.Translate(new Vector3(0,0,speed)*Time.deltaTime);
+				m_transform.Translate(new Vector3(0,0,speed)*Time.deltaTime);
 			}
 			if(Input.GetKey(KeyCode.DownArrow))
 			{
-				transform.Translate(new Vector3(0,0,-speed)*Time.deltaTime);
+				m_transform.Translate(new Vector3(0,0,-speed)*Time.deltaTime);
 			}
 		}
 	}
 	public void LockRotation()
 	{
-		transform.rotation = new Quaternion(0f,0f,0f,0f);
+		m_transform.rotation = new Quaternion(0f,0f,0f,0f);
 	}
 }

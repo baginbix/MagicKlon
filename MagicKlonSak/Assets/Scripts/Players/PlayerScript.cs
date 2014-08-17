@@ -6,8 +6,7 @@ public class PlayerScript: MonoBehaviour {
 	ArmorScript armor;
 	AttackScript attack;
 	ArmorBreakScript armorBreak;
-	
-	public string name;
+
 	// Use this for initialization
 	void Start () {
 		health = GetComponent<HealthScript>();

@@ -16,7 +16,6 @@ public class BaseUnit : IUnit {
 	public float range;
 	string enemyTag;
 
-	public string name;
 	public float cost;
 
 	void Start()
