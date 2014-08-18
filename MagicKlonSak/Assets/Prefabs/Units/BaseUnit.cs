@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class BaseUnit : IUnit {
+public class BaseUnit : MonoBehaviour {
 	HealthScript health;
 	ArmorScript armor;
 	AttackScript attack;
@@ -18,7 +18,11 @@ public class BaseUnit : IUnit {
 
 	public float cost;
 
-	void Start()
+	protected virtual void Awake()
+	{
+	}
+
+	protected virtual void Start()
 	{
 		enemy = new List<GameObject>();
 		if(tag == "Player1")
@@ -33,7 +37,7 @@ public class BaseUnit : IUnit {
 	}
 
 	// Update is called once per frame
-	void Update ()
+	protected virtual void Update ()
 	{
 		if(!health.IsDead())
 		{
@@ -60,18 +64,13 @@ public class BaseUnit : IUnit {
 		}
 	}
 
-	public string Name
-	{ 
-		get{return name;}
-	}
-
 	public float Cost
 	{ 
 		get{return cost;}
 		set{cost = value;}
 	}
 
-	void OnTriggerStay(Collider other) {
+	protected virtual void OnTriggerStay(Collider other) {
 
 		if(!maxCountCombatLock)
 		{
@@ -81,7 +80,7 @@ public class BaseUnit : IUnit {
 				agent.enabled = false;
 			}
 		
-			else if(other.tag == enemyTag)
+			else if(IsEnemy(other))
 			{
 				if(other.GetComponent<BaseUnit>().combatLock == false && !other.GetComponent<BaseUnit>().maxCountCombatLock)
 				{
@@ -93,23 +92,32 @@ public class BaseUnit : IUnit {
 		}
 	}
 
+	bool IsEnemy(Collider other)
+	{
+		GameObject enemy = GameObject.Find("Enemy");
+		MinionList enemyMinions = enemy.GetComponentInChildren<MinionList>();
+		if(enemyMinions.minionList.Contains(other.transform))
+			return true;
+		return false;
+	}
+
 	/*void OnTriggerExit(Collider other)
 	{
 		if(other.gameObject == enemy[0] && enemy.Count == 0)
 			ExitCombat();
 	}*/
 
-	public override void Attack()
+	public virtual void Attack()
 	{
 
 	}
 
-	public void TakeDamage(float amount)
+	public virtual void TakeDamage(float amount)
 	{
 		health.Damage(armor.ActuallHPTaken(amount));
 	}
 
-	public override void EngageCombat(GameObject vjsMamma)
+	public virtual void EngageCombat(GameObject vjsMamma)
 	{
 		combatLock = true;
 		enemy.Add(vjsMamma);
@@ -118,7 +126,7 @@ public class BaseUnit : IUnit {
 			chase.ChangeTarget(enemy[0].transform.position);
 	}
 
-	public override void ExitCombat()
+	public virtual void ExitCombat()
 	{
 		combatLock = false;
 		enemy.RemoveAt(0);
@@ -127,26 +135,30 @@ public class BaseUnit : IUnit {
 			chase.SetPrimaryTarget();
 	}
 
-	public override bool InRange()
+	bool InRange()
 	{
 		if(enemy.Count >0)
 			return Vector3.Distance(enemy[0].transform.position,transform.position)<=range;
 
 		return false;
 	}
-	public override bool OnSummon ()
+
+	protected virtual void  OnSummon ()
 	{
-		throw new System.NotImplementedException ();
+
 	}
 
-	public override bool OnDeath ()
+	protected virtual void  OnDeath ()
 	{
-		throw new System.NotImplementedException ();
 	}
-	public bool OnSummon(ref List<Transform> minionList)
+
+	public virtual void CancelCombat()
 	{
-		Debug.Log("Spawn ability FTW");
-		minionList.Add((Transform)Instantiate(transform, new Vector3(transform.position.x+1,transform.position.y,transform.position.z), transform.rotation));
-		return true;
-	}
+		combatLock = false;
+		agent.enabled = true;
+		if(chase != null)
+			chase.SetPrimaryTarget();
+		if(enemy.Count > 0)
+			enemy[0].GetComponent<BaseUnit>().CancelCombat();
+	}	
 }

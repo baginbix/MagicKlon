@@ -1,6 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum Faction
+{
+	Fire,
+	Wind,
+	Water,
+	Earth,
+	Neutral
+}
+
 public class FireEmberSpell : MonoBehaviour {
 
 	public float Size;
@@ -12,7 +21,7 @@ public class FireEmberSpell : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		velocity = targetPosition.transform.pos - transform.position;
+		velocity = targetPosition.transform.position - transform.position;
 		velocity = Vector3.Normalize(velocity);
 	}
 	

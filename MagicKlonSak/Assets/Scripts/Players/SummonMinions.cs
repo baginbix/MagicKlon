@@ -40,7 +40,7 @@ public class SummonMinions : MonoBehaviour {
 
 	bool CheckRange()
 	{
-		return Vector3.Distance(spawnPoint,transformMovment.position)<=SummonRange;
+		return Vector3.Distance(spawnPoint,transform.position)<=SummonRange;
 	}
 
 	void GetSpawnpoint()
@@ -50,6 +50,7 @@ public class SummonMinions : MonoBehaviour {
 		if (Physics.Raycast(ray,out hit) && hit.transform.tag =="Mark" && CheckMana())
 		{
 			spawnPoint = hit.point;
+			spawnPoint.y+=2;
 		}
 	}
 
@@ -61,8 +62,7 @@ public class SummonMinions : MonoBehaviour {
 
 	public void Summon()
 	{
-		minionList.GetComponent<MinionList>().minionList.Add((Transform)Instantiate(prefab, spawnPoint, transformMovment.rotation));
-		minionList.GetComponent<MinionList>().minionList[minionList.GetComponent<MinionList>().minionList.Count-1].GetComponent<BaseUnit>().OnSummon(ref minionList.GetComponent<MinionList>().minionList);
+		minionList.GetComponent<MinionList>().minionList.Add((Transform)Instantiate(prefab, spawnPoint, transform.rotation));
 		GetComponent<ManaScript>().CurrentMana -= prefab.GetComponent<BaseUnit>().cost;
 		spawnPoint = defaultSpawnPoint;
 		agent.enabled = false;
