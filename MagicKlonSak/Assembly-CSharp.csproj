@@ -53,6 +53,9 @@
      <Compile Include="Assets\Scripts\Factions\Fire\Units\BaseFireUnit.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaElementalScript.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaSurgeScript.cs" />
+     <Compile Include="Assets\Scripts\GeneralSpell\DirectionalCastable.cs" />
+     <Compile Include="Assets\Scripts\GeneralSpell\ISpellHit.cs" />
+     <Compile Include="Assets\Scripts\GeneralSpell\Spell.cs" />
      <Compile Include="Assets\Scripts\Minions\Chase.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\ArmorBreakScript.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\ArmorScript.cs" />
@@ -62,7 +65,6 @@
      <Compile Include="Assets\Scripts\Players\Movment.cs" />
      <Compile Include="Assets\Scripts\Players\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Players\SummonMinions.cs" />
-     <Compile Include="Assets\Scripts\Spells\Spell.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
