@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FireEmberSpell.cs" />
+     <Compile Include="Assets\MagmaLizardScript.cs" />
      <Compile Include="Assets\MagmaWispScript.cs" />
      <Compile Include="Assets\ManaBar.cs" />
      <Compile Include="Assets\MergedMagmaScript.cs" />
