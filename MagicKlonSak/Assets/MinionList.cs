@@ -19,6 +19,7 @@ public class MinionList : MonoBehaviour {
 			if(minionList[i].GetComponent<HealthScript>().IsDead())
 			{
 				Debug.Log("Found Dead");
+                minionList[i].GetComponent<BaseUnit>().OnDeath();
 				Destroy(minionList[i].gameObject);
 				minionList.RemoveAt(i);
 			}

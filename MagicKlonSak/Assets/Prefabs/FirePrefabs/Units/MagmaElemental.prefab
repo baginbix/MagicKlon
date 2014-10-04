@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: MagmaElemental
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,6 +178,7 @@ MonoBehaviour:
   CombatLockCount: 1
   combatLock: 0
   range: 1
+  m_cancelCombat: 0
   cost: 80
   CurrentEmberStack: 0
   MaxEmberStack: 4

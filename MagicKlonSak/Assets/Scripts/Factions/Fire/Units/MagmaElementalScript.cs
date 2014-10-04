@@ -7,19 +7,19 @@ public class MagmaElementalScript : BaseFireUnit {
 	void Awake()
 	{
 		base.Awake();
-		OnSummon();
 	}
 	// Use this for initialization
 	void Start () {
 		base.Start();
-	}
+        OnSummon();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		base.Update ();
 	}
 
-	protected override void OnSummon ()
+	public override void OnSummon ()
 	{
 		Debug.Log(MakeClone.ToString());
 		if(MakeClone)

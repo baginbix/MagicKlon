@@ -1,0 +1,11 @@
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\UnityEditor.dll
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\UnityEngine.dll
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\Mono.Cecil.dll
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\nunit.framework.dll
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\Unity.DataContract.dll
+D:\githubomega\MagicKlon\MagicKlonSak\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\githubomega\MagicKlon\MagicKlonSak\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+D:\githubomega\MagicKlon\MagicKlonSak\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\githubomega\MagicKlon\MagicKlonSak\obj\Debug\Assembly-CSharp-firstpass.pdb

@@ -502,10 +502,13 @@ MonoBehaviour:
   CombatLockCount: 1
   combatLock: 0
   range: 1
+  m_cancelCombat: 0
   cost: 80
   CurrentEmberStack: 1
   MaxEmberStack: 2
   SurgeSpeed: 50
+  SurgeRange: 10
+  surgeDamage: 20
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
