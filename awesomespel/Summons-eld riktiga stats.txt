@@ -1,0 +1,113 @@
+baseline: cost 5%, 3dmg, 10 hp, 0 armorbreak, 0 armor.
+
+Magma Elemental!
+Cost: 6%
+Ground
+Melee
+2 atk, 5 hp, 0 armbreak, 0 arm
+Effects/abilities: Summa 2 stycken Magma elementals när man summar den
+Burning ember: För varje stack av burning ember så får magma elemntal 1 hp extra.
+
+
+Magma Surge!
+Cost: 11%
+Ground
+Melee
+7 atk, 19 hp, 0 armbreak, 1 arm
+Effects/abilities: Surge(Burning ember(cost1)(max 2 stacks)): När Magma surge hamnar i combatlock och den har
+en stack med burning ember så kommer den använda Surge. Surge bryter combatlock och skickar fram
+magma surge igenom fiender. alla fiender som blir träffade av surge tar dmg.(Semilong cd).
+
+Unstable Magma(!)
+Cost: 10%
+Ground
+Melee
+4 atk, 2 hp, 0 armbreak, 0 arm
+Effects/abilities: Explode(Burning ember(max 3 stacks)): När Unstable magma dör så exploderar den och gör
+dmg till alla fiender som träffas av den. Alla friendly units som träffas av Explode får 1 
+stack av burning ember. Explodes dmg påverkas av armor. För varje stack av burning ember 
+så gör explode 1 mer dmg.
+
+Magma Giant(!)
+Cost: 35%
+Ground
+Melee
+21 atk, 55 hp, 2 armbreak, 0 arm
+Effects/abilities: Molten regeneration(Burning ember(cost1)(max 5 stacks): Om magma giant har tagit
+7 eller mer dmg så används en stack burning ember och Magma giant healas för 7 hp(ingen cd).
+Burning ember: Om Magma Giant har 1 stack burning ember så har han +1 arm.
+
+Magma Wisp!
+Cost: 16%
+Flying 
+Range: Medium
+3 atk, 8 hp, 0 armbreak, 0 arm
+Effects/abilities: Ignite: Ge närmaste möjliga friendly unit 1 stack burning ember(10sec cd).
+Burning ember: None.
+
+Magma Dragon
+Cost: 33%
+Flying
+Melee
+16 atk, 34 hp, 1 armbreak, 1 arm
+Effects/abilities: Warleader: Ge haste till friendly units inom en area till Magma Dragon.
+Burning ember: None.
+
+Magma Lizard(!)
+Cost: 17%
+Ground
+Melee
+6 atk, 14 hp, 4 armbreak, 3 arm
+Effects/abilities: FlameBreath: Varje gång som Magma Lizard anfaller så gör den dmg till fiende units
+bakom den han slår på.
+Burning ember: Ökar rangen på FlameBreath(max 1 stack)
+
+Flame Witch
+Cost: 53%
+Ground
+Range: Superlong
+13 atk, 17 hp, 0 armbreak, 0 arm
+Effects/abilities: GroundAttack: Gör anfall som siktas på marken under fienden. Fiender kan hinna röra sig
+ur anfallet. Flame Witch attack är aoe.
+Burning ember: Rage(cost 1stack)(max 1 stack): använder en stack burning ember och aktiverar Rage. 
+Rage ökar Flame Witch attackspeed en massa under en kort tid(semilong cd).
+
+BLA
+Cost: 27%
+Ground
+Melee
+14 atk, 9 hp, 0 armbreak, 1 arm
+Effects/abilities: Redirect pain: Varje gång BLA tar dmg så minskas den till 1. All dmg som tas bort skickas i stället
+till närmaste friendly unit(om där inte finns en annan unit så funkar inte Redirect pain).
+Burning ember: Death Denied(cost 5stacks)(max 5 stacks): När BLA tar dmg som kommer döda han så aktiveras
+Death Denied i 5 sec. När den är i gång så blir all dmg som BLA tar 0(one time use).
+
+Phoenix Hatchling
+Cost: 13%
+Flying
+Melee
+4 atk, 13 hp, 0 armbreak, 1 arm
+Effects/abilities: Final Moment: När Phoenix Hatchling dör så ressas den igen med nya stats(one time use)
+Ground
+Melee
+6 atk, 10 hp, 0 armbreak, 2 arm.
+On the hunt: Om Phoenix Hatchling dödar en byggnad och Final Moment inte är i gång så aktiveras On the hunt.
+On the hunt ger Phoenix Hatchling statsen "ground" och sätter attack till 6. 
+Burning ember: None.  
+
+Merged Magma!
+Cost: 22%
+Ground
+Melee
+5 atk, 33 hp, 0 armbreak, 2 arm
+Effects/abilities: ITS TIME: När Merged Magma dör så spawnar där Magma Elementals ur hans kropp. Antalet spawnade
+Magma Elementals beror på hur många stacks Burning ember som Merged Magma har när den dör.
+Burning ember: (max 3 stacks): Med 0 stacks så spawnas 2 Magma Elementals och för varje stack spawnar 1 extra
+Magma Elemental.
+
+
+
+
+
+
+

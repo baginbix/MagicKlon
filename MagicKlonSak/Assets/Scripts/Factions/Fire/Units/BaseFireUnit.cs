@@ -31,5 +31,11 @@ public class BaseFireUnit : BaseUnit {
 		{
 			CurrentEmberStack = MaxEmberStack;
 		}
+        OnEmberGain();
 	}
+
+    protected virtual void OnEmberGain()
+    {
+    }
 }
+

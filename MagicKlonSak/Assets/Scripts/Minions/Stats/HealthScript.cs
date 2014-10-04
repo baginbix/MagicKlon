@@ -31,7 +31,7 @@ public class HealthScript : MonoBehaviour {
 	{
 		if(bonusHitPoints+amount<MaxHitPoints)
 		{
-			bonusHitPoints+=amount;
+			currentHitPoints+=amount;
 		}
 		else
 		{

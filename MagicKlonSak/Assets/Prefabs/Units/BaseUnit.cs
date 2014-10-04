@@ -4,16 +4,16 @@ using System.Collections.Generic;
 
 public class BaseUnit : MonoBehaviour
 {
-    protected HealthScript health;
+    public HealthScript health;
     protected ArmorScript armor;
     protected AttackScript attack;
     protected ArmorBreakScript armorBreak;
-    Chase chase;
+    protected Chase chase;
     public bool maxCountCombatLock;
     public int CombatLockCount = 1;
     public bool combatLock;
-    List<GameObject> enemy;
-    NavMeshAgent agent;
+    protected List<GameObject> enemy;
+    protected NavMeshAgent agent;
     public float range;
     string enemyTag;
     public bool m_cancelCombat;
@@ -81,7 +81,7 @@ public class BaseUnit : MonoBehaviour
         }
     }
 
-    bool IsEnemy(Collider other)
+    protected bool IsEnemy(Collider other)
     {
         GameObject enemy = GameObject.Find("Enemy");
         MinionList enemyMinions = enemy.GetComponentInChildren<MinionList>();
@@ -124,7 +124,7 @@ public class BaseUnit : MonoBehaviour
             chase.SetPrimaryTarget();
     }
 
-    bool InRange()
+    protected bool InRange()
     {
         if (enemy.Count > 0)
             return Vector3.Distance(enemy[0].transform.position, transform.position) <= range;
@@ -166,8 +166,6 @@ public class BaseUnit : MonoBehaviour
             else if (chase != null)
                 chase.ChangeTarget(enemy[0].transform.position);
         }
-        else
-            OnDeath();
     }
 
     protected virtual void CancelCombat()

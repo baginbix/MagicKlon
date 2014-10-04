@@ -22,6 +22,7 @@ public class Chase: MonoBehaviour {
 		if(agent.enabled && !subTargetSet) 
 		{
 			vjsMamma = GameObject.FindGameObjectWithTag("Player2") as GameObject;
+            Debug.Log(name);
 			if(vjsMamma != null)
 				agent.SetDestination(vjsMamma.transform.position);
 		}
