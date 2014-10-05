@@ -53,7 +53,7 @@ Melee
 Effects/abilities: Warleader: Ge haste till friendly units inom en area till Magma Dragon.
 Burning ember: None.
 
-Magma Lizard
+Magma Lizard!
 Cost: 17%
 Ground
 Melee

@@ -28,7 +28,7 @@ dmg till alla fiender som träffas av den. Alla friendly units som träffas av Exp
 stack av burning ember. Explodes dmg påverkas av armor. För varje stack av burning ember 
 så gör explode 1 mer dmg.
 
-Magma Giant(!)
+Magma Giant!
 Cost: 35%
 Ground
 Melee
@@ -37,7 +37,7 @@ Effects/abilities: Molten regeneration(Burning ember(cost1)(max 5 stacks): Om ma
 7 eller mer dmg så används en stack burning ember och Magma giant healas för 7 hp(ingen cd).
 Burning ember: Om Magma Giant har 1 stack burning ember så har han +1 arm.
 
-Magma Wisp!
+Magma Wisp(!)
 Cost: 16%
 Flying 
 Range: Medium
@@ -82,7 +82,7 @@ till närmaste friendly unit(om där inte finns en annan unit så funkar inte Redir
 Burning ember: Death Denied(cost 5stacks)(max 5 stacks): När BLA tar dmg som kommer döda han så aktiveras
 Death Denied i 5 sec. När den är i gång så blir all dmg som BLA tar 0(one time use).
 
-Phoenix Hatchling
+Phoenix Hatchling(!)
 Cost: 13%
 Flying
 Melee

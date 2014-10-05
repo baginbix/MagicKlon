@@ -47,16 +47,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FireEmberSpell.cs" />
-     <Compile Include="Assets\MagmaGiantScript.cs" />
-     <Compile Include="Assets\MagmaLizardScript.cs" />
-     <Compile Include="Assets\MagmaWispScript.cs" />
      <Compile Include="Assets\ManaBar.cs" />
-     <Compile Include="Assets\MergedMagmaScript.cs" />
      <Compile Include="Assets\MinionList.cs" />
      <Compile Include="Assets\Prefabs\Units\BaseUnit.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\BaseFireUnit.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaElementalScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaGiantScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaLizardScript.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaSurgeScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaWispScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\MergedMagmaScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\PhoenixHatchlingRevivedScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\PhoenixHatchlingScript.cs" />
      <Compile Include="Assets\Scripts\GeneralSpell\DirectionalCastable.cs" />
      <Compile Include="Assets\Scripts\GeneralSpell\ISpellHit.cs" />
      <Compile Include="Assets\Scripts\GeneralSpell\Spell.cs" />
