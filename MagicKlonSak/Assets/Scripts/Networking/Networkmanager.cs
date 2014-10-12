@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NetworkManager : MonoBehaviour
+public class Networkmanager : MonoBehaviour
 {
     private int port;
     private string gameType = "099d1cf0898875394b062f0e35fdcd72"; //MagicKlon md5 hashat
@@ -77,4 +77,25 @@ public class NetworkManager : MonoBehaviour
     {
         return host.gameName != myGameName && host.connectedPlayers == 1;
     }
+
+	void OnGUI()
+	{
+		if (!Network.isClient && !Network.isServer)
+		{
+			if (GUI.Button(new Rect(100, 100, 250, 100), "Start Server"))
+				StartServer();
+			
+			/*if (GUI.Button(new Rect(100, 250, 250, 100), "Refresh Hosts"))
+				RefreshHostList();
+			
+			if (hostList != null)
+			{
+				for (int i = 0; i < hostList.Length; i++)
+				{
+					if (GUI.Button(new Rect(400, 100 + (110 * i), 300, 100), hostList[i].gameName))
+						JoinServer(hostList[i]);
+				}
+			}*/
+		}
+	}
 }
