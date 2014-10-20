@@ -47,12 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FireEmberSpell.cs" />
-     <Compile Include="Assets\FireLordScript.cs" />
-     <Compile Include="Assets\MagmaDragonScript.cs" />
      <Compile Include="Assets\ManaBar.cs" />
      <Compile Include="Assets\MinionList.cs" />
      <Compile Include="Assets\Prefabs\Units\BaseUnit.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\BaseFireUnit.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\FireLordScript.cs" />
+     <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaDragonScript.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaElementalScript.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaGiantScript.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\MagmaLizardScript.cs" />
