@@ -9,24 +9,24 @@ Effects/abilities: Summa 2 stycken Magma elementals när man summar den
 Burning ember: För varje stack av burning ember så får magma elemntal 1 hp extra.
 
 
-Magma Surge!
+Magma Surge(!)
 Cost: 11%
 Ground
 Melee
 7 atk, 19 hp, 0 armbreak, 1 arm
-Effects/abilities: Surge(Burning ember(cost1)(max 2 stacks)): När Magma surge hamnar i combatlock och den har
+(Effects/abilities: Surge(Burning ember(cost1)(max 2 stacks)): När Magma surge hamnar i combatlock och den har
 en stack med burning ember så kommer den använda Surge. Surge bryter combatlock och skickar fram
-magma surge igenom fiender. alla fiender som blir träffade av surge tar dmg.(Semilong cd).
+magma surge igenom fiender. alla fiender som blir träffade av surge tar dmg.(Semilong cd).)
 
 Unstable Magma(!)
 Cost: 10%
 Ground
 Melee
 4 atk, 2 hp, 0 armbreak, 0 arm
-Effects/abilities: Explode(Burning ember(max 3 stacks)): När Unstable magma dör så exploderar den och gör
+(Effects/abilities: Explode(Burning ember(max 3 stacks)): När Unstable magma dör så exploderar den och gör
 dmg till alla fiender som träffas av den. Alla friendly units som träffas av Explode får 1 
 stack av burning ember. Explodes dmg påverkas av armor. För varje stack av burning ember 
-så gör explode 1 mer dmg.
+så gör explode 1 mer dmg.)
 
 Magma Giant!
 Cost: 35%
@@ -39,21 +39,21 @@ Burning ember: Om Magma Giant har 1 stack burning ember så har han +1 arm.
 
 Magma Wisp(!)
 Cost: 16%
-Flying 
+(Flying) 
 Range: Medium
 3 atk, 8 hp, 0 armbreak, 0 arm
 Effects/abilities: Ignite: Ge närmaste möjliga friendly unit 1 stack burning ember(10sec cd).
 Burning ember: None.
 
-Magma Dragon
+Magma Dragon(!)
 Cost: 33%
-Flying
+(Flying)
 Melee
 16 atk, 34 hp, 1 armbreak, 1 arm
-Effects/abilities: Warleader: Ge haste till friendly units inom en area till Magma Dragon.
+(Effects/abilities: Warleader: Ge haste till friendly units inom en area till Magma Dragon.)
 Burning ember: None.
 
-Magma Lizard(!)
+Magma Lizard(!)?
 Cost: 17%
 Ground
 Melee
@@ -72,19 +72,19 @@ ur anfallet. Flame Witch attack är aoe.
 Burning ember: Rage(cost 1stack)(max 1 stack): använder en stack burning ember och aktiverar Rage. 
 Rage ökar Flame Witch attackspeed en massa under en kort tid(semilong cd).
 
-BLA
+Fire Lord(!)
 Cost: 27%
 Ground
 Melee
 14 atk, 9 hp, 0 armbreak, 1 arm
-Effects/abilities: Redirect pain: Varje gång BLA tar dmg så minskas den till 1. All dmg som tas bort skickas i stället
+(Effects/abilities: Redirect pain: Varje gång BLA tar dmg så minskas den till 1. All dmg som tas bort skickas i stället
 till närmaste friendly unit(om där inte finns en annan unit så funkar inte Redirect pain).
 Burning ember: Death Denied(cost 5stacks)(max 5 stacks): När BLA tar dmg som kommer döda han så aktiveras
-Death Denied i 5 sec. När den är i gång så blir all dmg som BLA tar 0(one time use).
+Death Denied i 5 sec. När den är i gång så blir all dmg som BLA tar 0(one time use).)
 
 Phoenix Hatchling(!)
 Cost: 13%
-Flying
+(Flying)
 Melee
 4 atk, 13 hp, 0 armbreak, 1 arm
 Effects/abilities: Final Moment: När Phoenix Hatchling dör så ressas den igen med nya stats(one time use)
