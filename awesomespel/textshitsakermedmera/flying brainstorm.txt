@@ -1,0 +1,16 @@
+flying units. dom flyger vilket gör att dom kan flyga över fiender/friendly units och walls/byggnader.
+
+flying units kan bara bli anfallna av saker med antiair attacker.
+
+flying units blir bara påverkade av spells, abilitys och ground effekts som har anti air effekt.
+
+flying units kan bara gå i combat lock med units som har anti air attacker.
+
+flying units kommer ha olika anfall beroende på om dom är i combat lock eller inte. om
+den inte är i combat lock så använder den sig av sitt out of combat attack som kan träffa
+alla units. den stängs av när den går i combat lock.
+(hur out of combat attacken ska funka är inte säkert,
+den kanske får uniten att stanna och fortsätta anfalla tills den får slut på saker att anfalla eller
+går i combat lock, eller så kanske den bara anfaller medans den flyger så det blir mer av en driveby.)
+
+flying units kommer ha läggre stats generelt för att väga up för fördelarna som flying ger.
