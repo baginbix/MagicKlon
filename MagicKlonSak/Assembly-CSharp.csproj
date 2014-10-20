@@ -46,9 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FireEmberSpell.cs" />
-     <Compile Include="Assets\ManaBar.cs" />
-     <Compile Include="Assets\MinionList.cs" />
      <Compile Include="Assets\Prefabs\Units\BaseFlyingUnit.cs" />
      <Compile Include="Assets\Prefabs\Units\BaseUnit.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\BaseFireUnit.cs" />
@@ -63,6 +60,7 @@
      <Compile Include="Assets\Scripts\Factions\Fire\Units\PhoenixHatchlingRevivedScript.cs" />
      <Compile Include="Assets\Scripts\Factions\Fire\Units\PhoenixHatchlingScript.cs" />
      <Compile Include="Assets\Scripts\GeneralSpell\DirectionalCastable.cs" />
+     <Compile Include="Assets\Scripts\GeneralSpell\FireEmberSpell.cs" />
      <Compile Include="Assets\Scripts\GeneralSpell\ISpellHit.cs" />
      <Compile Include="Assets\Scripts\GeneralSpell\Spell.cs" />
      <Compile Include="Assets\Scripts\Minions\Chase.cs" />
@@ -71,7 +69,9 @@
      <Compile Include="Assets\Scripts\Minions\Stats\AttackScript.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\HealthScript.cs" />
      <Compile Include="Assets\Scripts\Networking\Networkmanager.cs" />
+     <Compile Include="Assets\Scripts\Players\ManaBar.cs" />
      <Compile Include="Assets\Scripts\Players\ManaScript.cs" />
+     <Compile Include="Assets\Scripts\Players\MinionList.cs" />
      <Compile Include="Assets\Scripts\Players\Movment.cs" />
      <Compile Include="Assets\Scripts\Players\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Players\SummonMinions.cs" />

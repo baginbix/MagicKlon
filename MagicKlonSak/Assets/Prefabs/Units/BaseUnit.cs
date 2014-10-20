@@ -1,7 +1,10 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+enum CombatStates
+{
 
+};
 public class BaseUnit : MonoBehaviour
 {
     public HealthScript health;
@@ -17,6 +20,7 @@ public class BaseUnit : MonoBehaviour
     public float range;
     string enemyTag;
     public bool m_cancelCombat;
+	public bool flying = false;
 
     public float cost;
 
