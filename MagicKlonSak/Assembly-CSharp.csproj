@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FireEmberSpell.cs" />
+     <Compile Include="Assets\FireLordScript.cs" />
      <Compile Include="Assets\MagmaDragonScript.cs" />
      <Compile Include="Assets\ManaBar.cs" />
      <Compile Include="Assets\MinionList.cs" />
