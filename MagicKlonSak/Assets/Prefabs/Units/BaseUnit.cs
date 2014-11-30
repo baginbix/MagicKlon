@@ -155,6 +155,7 @@ public class BaseUnit : MonoBehaviour
                 if (attack != null && attack.Attack())
                 {
                     enemy[0].GetComponent<HealthScript>().currentHitPoints -= attack.TotalAttackDamage;
+					Debug.Log(enemy == null);
                     if (enemy[0].GetComponent<BaseUnit>().health.IsDead())
                     {
                         if (enemy.Count == 0)
