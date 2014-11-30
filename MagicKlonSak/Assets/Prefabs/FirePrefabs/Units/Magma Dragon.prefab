@@ -180,9 +180,11 @@ MonoBehaviour:
   combatLock: 0
   range: 1
   m_cancelCombat: 0
+  flying: 0
   cost: 0
   CurrentEmberStack: 0
   MaxEmberStack: 0
+  WarLeaderRange: 5
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
