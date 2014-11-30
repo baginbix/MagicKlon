@@ -81,6 +81,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400002, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
+      propertyPath: prefab.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
       propertyPath: m_LocalPosition.x
       value: 23.2719955
@@ -136,7 +140,7 @@ Prefab:
     - target: {fileID: 11400002, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
       propertyPath: prefab
       value: 
-      objectReference: {fileID: 400010, guid: 5deda94b585de6e4ca10eabd5f7dac47, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
       propertyPath: m_RootOrder
       value: 7
@@ -145,6 +149,22 @@ Prefab:
       propertyPath: m_transform
       value: 
       objectReference: {fileID: 2101870327}
+    - target: {fileID: 11400002, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
+      propertyPath: prefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 400000, guid: 5a8a3559d660ba442b2105f84538aa65, type: 2}
+    - target: {fileID: 11400002, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
+      propertyPath: prefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 400000, guid: c3f21efca6b1fc24ba5b6d8ec5da0e4e, type: 2}
+    - target: {fileID: 11400002, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
+      propertyPath: prefab.Array.data[2]
+      value: 
+      objectReference: {fileID: 400000, guid: 3ccf08784b9a43144b3990c89240a1ae, type: 2}
+    - target: {fileID: 11400002, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
+      propertyPath: prefab.Array.data[3]
+      value: 
+      objectReference: {fileID: 400000, guid: 83dea10f287950744b47388fadab5c2f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f91b28dbc138f234bbd528476ffcbca2, type: 2}
   m_RootGameObject: {fileID: 2101870323}
@@ -1698,9 +1718,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def048478040205428f87bd06b63c907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 400010, guid: 5deda94b585de6e4ca10eabd5f7dac47, type: 2}
+  prefab:
+  - {fileID: 400000, guid: 5a8a3559d660ba442b2105f84538aa65, type: 2}
+  - {fileID: 400000, guid: c3f21efca6b1fc24ba5b6d8ec5da0e4e, type: 2}
+  - {fileID: 400000, guid: 3ccf08784b9a43144b3990c89240a1ae, type: 2}
+  - {fileID: 400000, guid: 83dea10f287950744b47388fadab5c2f, type: 2}
   SummonRange: 5
   minionList: {fileID: 219438770}
+  chosenHotkey: 0
 --- !u!114 &2101870330
 MonoBehaviour:
   m_ObjectHideFlags: 0
