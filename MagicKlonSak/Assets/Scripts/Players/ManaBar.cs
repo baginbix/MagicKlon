@@ -11,13 +11,19 @@ public class ManaBar : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ManaBarTexture = GetComponent<GUITexture>();
-		mana = player.GetComponent<ManaScript>();
+		try{
+			mana = player.GetComponent<ManaScript>();
+		}
+		catch
+		{
+
+		}
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		ShowCurrentMana();
+		///ShowCurrentMana();
 	}
 
 	public void ShowCurrentMana()

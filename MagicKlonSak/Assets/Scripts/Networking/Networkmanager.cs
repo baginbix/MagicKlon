@@ -1,96 +1,81 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class Networkmanager : MonoBehaviour
+public class NetworkManager : MonoBehaviour
 {
-    private int port;
-    private string gameType = "099d1cf0898875394b062f0e35fdcd72"; //MagicKlon md5 hashat
-    private string myGameName;
-    private bool hosting;
-    private bool foundPartner;
+    private const string typeName = "UniqueGameName";
+    private const string gameName = "RoomName";
 
-	void Start()
-    {
-        port = 44552;
-	}
+    private bool isRefreshingHostList = false;
+    private HostData[] hostList;
 
-	void StartServer()
-    {
-        hosting = true;
-        foundPartner = false;
-        Network.InitializeServer(1, port, false);
-        myGameName = "Random game" + Random.Range(0, 712371231);
-        MasterServer.RegisterHost(gameType, myGameName);
-        StartCoroutine("WaitForConnection");
-    }
+    public GameObject playerPrefab;
 
-    void FindServer()
+    void OnGUI()
     {
-        foundPartner = false;
-        hosting = false;
-        myGameName = "FUCKING NOT HOSTING";
-        StartCoroutine("LookForServer");
-    }
-
-    IEnumerator LookForServer()
-    {
-        while(!foundPartner)
+        if (!Network.isClient && !Network.isServer)
         {
-            HostData[] hostData = MasterServer.PollHostList();
-            foreach (var host in hostData)
-            {
-                if (IsHostAvailable(host))
-                    ConnectToHost(host);
-            }
+            if (GUI.Button(new Rect(100, 100, 250, 100), "Start Server"))
+                StartServer();
 
-            yield return new WaitForSeconds(0.1f);
+            if (GUI.Button(new Rect(100, 250, 250, 100), "Refresh Hosts"))
+                RefreshHostList();
+
+            if (hostList != null)
+            {
+                for (int i = 0; i < hostList.Length; i++)
+                {
+                    if (GUI.Button(new Rect(400, 100 + (110 * i), 300, 100), hostList[i].gameName))
+                        JoinServer(hostList[i]);
+                }
+            }
         }
     }
 
-    IEnumerator WaitForConnection()
+    private void StartServer()
     {
-        while(!foundPartner)
-        {
-            HostData[] hostData = MasterServer.PollHostList();
-            foreach (var host in hostData)
-            {
-                if (host.connectedPlayers == 2 && IsHostMe(host))
-                    foundPartner = true;
-            }
+        Network.InitializeServer(5, 25000, !Network.HavePublicAddress());
+        MasterServer.RegisterHost(typeName, gameName);
+    }
 
-            yield return new WaitForSeconds(0.1f);
+    void OnServerInitialized()
+    {
+        SpawnPlayer();
+    }
+
+
+    void Update()
+    {
+        if (isRefreshingHostList && MasterServer.PollHostList().Length > 0)
+        {
+            isRefreshingHostList = false;
+            hostList = MasterServer.PollHostList();
         }
     }
 
-    private bool IsHostMe(HostData host)
+    private void RefreshHostList()
     {
-        return host.gameName == myGameName;
+        if (!isRefreshingHostList)
+        {
+            isRefreshingHostList = true;
+            MasterServer.RequestHostList(typeName);
+        }
     }
 
-    private void ConnectToHost(HostData host)
+
+    private void JoinServer(HostData hostData)
     {
-        foundPartner = true;
-        Network.Connect(host);
+        Network.Connect(hostData);
     }
 
-    private bool IsHostAvailable(HostData host)
+    void OnConnectedToServer()
     {
-        return host.gameName != myGameName && host.connectedPlayers == 1;
+        SpawnPlayer();
     }
 
-	void OnGUI()
-	{
-		if (!Network.isClient && !Network.isServer)
-		{
-			if (GUI.Button(new Rect(100, 100, 250, 100), "Start Server"))
-				StartServer();
-			
-			if (foundPartner != null)
-			{
-				if (GUI.Button(new Rect(400, 200, 300, 100), "Find Server"))
-					FindServer();
-			}
-		}
-	}
 
+    private void SpawnPlayer()
+    {
+        Network.Instantiate(playerPrefab, Vector3.up * 5, Quaternion.identity, 0);
+    }
 }
