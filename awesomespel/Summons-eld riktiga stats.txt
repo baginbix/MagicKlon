@@ -79,8 +79,8 @@ Melee
 14 atk, 9 hp, 0 armbreak, 1 arm
 (Effects/abilities: Redirect pain: Varje gång Fire Lord tar dmg så minskas den till 1. All dmg som tas bort skickas i stället
 till närmaste friendly unit(om där inte finns en annan unit så funkar inte Redirect pain).
-Burning ember: Death Denied(cost 5stacks)(max 5 stacks): När BLA tar dmg som kommer döda han så aktiveras
-Death Denied i 5 sec. När den är i gång så blir all dmg som BLA tar 0(one time use).)
+Burning ember: Death Denied(cost 5stacks)(max 5 stacks): När Fire Lord tar dmg som kommer döda han så aktiveras
+Death Denied i 5 sec. När den är i gång så blir all dmg som Fire Lord tar 0(one time use).)
 
 Phoenix Hatchling(!)
 Cost: 13%
