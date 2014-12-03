@@ -78,4 +78,11 @@ public class NetworkManager : MonoBehaviour
     {
         Network.Instantiate(playerPrefab, Vector3.up * 5, Quaternion.identity, 0);
     }
+
+
+	void OnMasterServerEvent(MasterServerEvent msEvent)
+	{
+		if (msEvent == MasterServerEvent.HostListReceived)
+			hostList = MasterServer.PollHostList();
+	}
 }
