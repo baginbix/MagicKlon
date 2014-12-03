@@ -60,7 +60,7 @@ Assets/Scripts/Minions/Stats/ArmorBreakScript.cs
 Assets/Scripts/Minions/Stats/ArmorScript.cs
 Assets/Scripts/Minions/Stats/AttackScript.cs
 Assets/Scripts/Minions/Stats/HealthScript.cs
-Assets/Scripts/Networking/NetworkManager.cs
+Assets/Scripts/Networking/Networkmanager.cs
 Assets/Scripts/Players/ManaBar.cs
 Assets/Scripts/Players/ManaScript.cs
 Assets/Scripts/Players/MinionList.cs
