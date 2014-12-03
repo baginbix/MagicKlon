@@ -85,4 +85,8 @@ public class NetworkManager : MonoBehaviour
 		if (msEvent == MasterServerEvent.HostListReceived)
 			hostList = MasterServer.PollHostList();
 	}
+	void OnFailedToConnect(NetworkConnectionError error) {
+		Debug.Log("Could not connect to server: " + error);
+	}
+
 }
