@@ -1,16 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Networking\NetworkManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Prefabs\Units\BaseUnit.cs">
     <Files>
-      <File FileName="Assets\Scripts\Networking\Networkmanager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Networking\NetworkManager.cs" Line="90" Column="3" />
-      <File FileName="Assets\Scripts\Networking\Networkmanager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Players\SummonMinions.cs" Line="85" Column="34" />
+      <File FileName="Assets\Scripts\Players\Movment.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Players\MinionList.cs" Line="22" Column="66" />
+      <File FileName="Assets\Prefabs\Units\BaseUnit.cs" Line="159" Column="1" />
       <File FileName="Assets\Scripts\Factions\Fire\Units\MergedMagmaScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Players\MinionList.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Players\SummonMinions.cs" Line="1" Column="1" />
-      <File FileName="Assets\Prefabs\Units\BaseUnit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Factions\Fire\Units\MagmaSurgeScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Factions\Fire\Units\BaseFireUnit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Minions\Chase.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

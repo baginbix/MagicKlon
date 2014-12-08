@@ -6,7 +6,6 @@ public enum Hotkey
 	Two,
 	Three,
 	Four,
-	Five,
 	None = 4
 };
 public class SummonMinions : MonoBehaviour {
@@ -30,10 +29,12 @@ public class SummonMinions : MonoBehaviour {
 	void Update () {
 		if (Input.GetButtonDown("Fire1") && chosenHotkey != Hotkey.None) {
 			unitIndex = (int)chosenHotkey;
+			Debug.Log("Time to summon");
 			GetSpawnpoint();
 		}
 		if(spawnPoint != defaultSpawnPoint)
 		{
+			Debug.Log("Spawnungn");
 			if(CheckRange() )
 			{
 				if(CheckMana())
@@ -63,7 +64,11 @@ public class SummonMinions : MonoBehaviour {
 		{
 			spawnPoint = hit.point;
 			spawnPoint.y+=2;
+			Debug.Log(spawnPoint.ToString());
 		}
+
+		Debug.Log(hit.ToString());
+
 	}
 
 	bool CheckMana()
@@ -74,17 +79,20 @@ public class SummonMinions : MonoBehaviour {
 
 	public void Summon()
 	{
-		minionList.GetComponent<MinionList>().minionList.Add((Transform)Instantiate(prefab[unitIndex], spawnPoint, transform.rotation));
+		Transform unit = (Transform)Instantiate(prefab[unitIndex], spawnPoint, transform.rotation);
+		minionList.GetComponent<MinionList>().minionList.Add(unit);
 		GetComponent<ManaScript>().CurrentMana -= prefab[unitIndex].GetComponent<BaseUnit>().cost;
 		spawnPoint = defaultSpawnPoint;
 		agent.enabled = false;
 		chosenHotkey = Hotkey.None;
+		Debug.Log(unit.GetComponent<HealthScript>().currentHitPoints.ToString());
 	}
 
 	public void CancelMovment()
 	{
 		agent.enabled = false;
 		spawnPoint = defaultSpawnPoint;
+		chosenHotkey = Hotkey.None;
 	}
 
 	void CheckForSelectedMinion()

@@ -13,8 +13,9 @@ public class HealthScript : MonoBehaviour {
 		set{baseHitpoints = value;}
 	}
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		currentHitPoints = baseHitpoints + bonusHitPoints;
+
 	}
 	
 	// Update is called once per frame
@@ -24,6 +25,7 @@ public class HealthScript : MonoBehaviour {
 
 	public void Damage(float amount)
 	{
+		Debug.Log(amount.ToString());
 		currentHitPoints -= amount;
 	}
 
@@ -58,6 +60,7 @@ public class HealthScript : MonoBehaviour {
 	{
 		if(currentHitPoints<= 0)
 		{
+			Debug.Log(currentHitPoints.ToString());
 			currentHitPoints = 0;
 			return true;
 		}
