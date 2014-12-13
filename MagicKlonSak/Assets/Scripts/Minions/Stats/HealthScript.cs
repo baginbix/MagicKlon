@@ -25,8 +25,9 @@ public class HealthScript : MonoBehaviour {
 
 	public void Damage(float amount)
 	{
-		Debug.Log(amount.ToString());
-		currentHitPoints -= amount;
+		float dmgReduction = GetComponent<ArmorScript>().ActuallHPTaken(amount);
+		Debug.Log(dmgReduction.ToString());
+		currentHitPoints -= dmgReduction;
 	}
 
 	public void Heal(float amount)

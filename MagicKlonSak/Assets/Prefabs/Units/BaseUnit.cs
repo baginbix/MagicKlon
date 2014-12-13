@@ -13,8 +13,9 @@ public class BaseUnit : MonoBehaviour
     protected ArmorBreakScript armorBreak;
     protected Chase chase;
     public bool maxCountCombatLock;
-    public int CombatLockCount = 1;
+    public const int CombatLockCount = 1;
     public bool combatLock;
+	bool summonerCombatLock;
     protected List<GameObject> enemy;
     protected NavMeshAgent agent;
     public float range;
@@ -45,6 +46,11 @@ public class BaseUnit : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+		if(summonerCombatLock)
+		{
+			SummonerCombat();
+		}
+
         if (combatLock)
         {
             Combat();
@@ -64,13 +70,19 @@ public class BaseUnit : MonoBehaviour
 
     protected virtual void OnTriggerStay(Collider other)
     {
+		if(other.name == "Enemy" )
+		{
+			enemy.Add (other.gameObject);
+			summonerCombatLock = true;
+			return;
+		}
 
         if (!maxCountCombatLock)
         {
             if (other.tag == "Player2")
             {
                 EngageCombat(other.gameObject);
-                agent.enabled = false;
+				return;
             }
 
             else if (IsEnemy(other))
@@ -80,9 +92,12 @@ public class BaseUnit : MonoBehaviour
                     EngageCombat(other.gameObject);
                     other.GetComponent<BaseUnit>().EngageCombat(gameObject);
                     agent.enabled = false;
+					return;
                 }
             }
         }
+
+
     }
 
     protected bool IsEnemy(Collider other)
@@ -122,8 +137,8 @@ public class BaseUnit : MonoBehaviour
     public virtual void ExitCombat()
     {
         combatLock = false;
-        enemy.RemoveAt(0);
-        agent.enabled = true;
+		maxCountCombatLock = false;
+		agent.enabled = true;
         if (chase != null)
             chase.SetPrimaryTarget();
     }
@@ -145,26 +160,44 @@ public class BaseUnit : MonoBehaviour
     {
     }
 
+	protected virtual void SummonerCombat()
+	{
+
+		if(InRange ())
+		{
+			agent.enabled = false;
+			if(attack.Attack())
+			{
+				enemy[0].GetComponent<HealthScript>().Damage(attack.TotalAttackDamage);
+			}
+		}
+		else
+		{
+			agent.enabled = true;
+		}
+	}
+
     protected virtual void Combat()
     {
         if (!health.IsDead())
         {
+			Debug.Log(enemy[0].name);
             if (InRange())
             {
                 agent.enabled = false;
                 if (attack != null && attack.Attack())
                 {
-                    enemy[0].GetComponent<HealthScript>().currentHitPoints -= attack.TotalAttackDamage;
+					enemy[0].GetComponent<BaseUnit>().TakeDamage(attack.TotalAttackDamage);
 					Debug.Log(enemy == null);
-                    if (enemy[0].GetComponent<BaseUnit>().health.IsDead())
+                    if (enemy[0].GetComponent<HealthScript>().IsDead())
                     {
-                        if (enemy.Count == 0)
-                        {
-                            Debug.Log("Killed him");
-                            ExitCombat();
-                        }
-                        else
-                            enemy.RemoveAt(0);
+						enemy.RemoveAt(0);
+						maxCountCombatLock = false;
+						if(enemy.Count == 0)
+						{
+                       		ExitCombat();
+						}
+                            
                     }
                 }
             }
@@ -189,6 +222,5 @@ public class BaseUnit : MonoBehaviour
             enemy[i].GetComponent<BaseUnit>().m_cancelCombat = true;
         }
     }
-
 
 }
