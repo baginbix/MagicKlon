@@ -20,6 +20,7 @@ public class Spell : MonoBehaviour {
 	
 	void Update() 
     {
+        HandleCooldown();
         if (Input.GetKeyDown(hotkey) && CanCast())
             Cast();
 	}
