@@ -70,7 +70,7 @@
      <Compile Include="Assets\Scripts\Minions\Stats\ArmorScript.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\AttackScript.cs" />
      <Compile Include="Assets\Scripts\Minions\Stats\HealthScript.cs" />
-     <Compile Include="Assets\Scripts\Networking\Networkmanager.cs" />
+     <Compile Include="Assets\Scripts\Networking\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\Players\ManaBar.cs" />
      <Compile Include="Assets\Scripts\Players\ManaScript.cs" />
      <Compile Include="Assets\Scripts\Players\MinionList.cs" />

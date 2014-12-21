@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
 public enum ModifierType
 {
 	Buff,
@@ -13,24 +15,26 @@ public enum StatusEffects
 	AttackSpeed,
 	Health
 }
-
-public struct StatusEffect
+[System.Serializable]
+public class StatusEffect
 {
 	public StatusEffects statusEffect; 
 	public float effect;
 }
 
-
+[System.Serializable]
 public class StatModifier : MonoBehaviour {
 	public ModifierType type;
 
-	public StatusEffect[] effectList;
+	public List<StatusEffect> effectList = new List<StatusEffect>();
 
 	public string name;
 	public string description;
 
-	public float duration;
+	public float duration = -1;
 	public float timeRemaining;
+
+	public bool Applyed = false;
 
 
 	// Use this for initialization
@@ -45,6 +49,14 @@ public class StatModifier : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		timeRemaining -= Time.deltaTime;
+	}
+
+	public bool HasEnded()
+	{
+		if(timeRemaining <=0)
+			return true;
+
+		return false;
 	}
 }
