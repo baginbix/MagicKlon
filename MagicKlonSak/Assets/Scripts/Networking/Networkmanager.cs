@@ -4,7 +4,7 @@ using System.Collections;
 public class NetworkManager : MonoBehaviour
 {
     private const string typeName = "UniqueGameName";
-    private const string gameName = "RoomName";
+    private const string gameName = "TAMS Å Fredriköös Spel";
 
     private bool isRefreshingHostList = false;
     private HostData[] hostList;
@@ -23,7 +23,7 @@ public class NetworkManager : MonoBehaviour
 
             if (hostList != null)
             {
-                for (int i = 0; i < hostList.Length; i++)
+                for (int i = 0; i < hostList.Length-1; i++)
                 {
                     if (GUI.Button(new Rect(400, 100 + (110 * i), 300, 100), hostList[i].gameName))
                         JoinServer(hostList[i]);
@@ -34,6 +34,7 @@ public class NetworkManager : MonoBehaviour
 
     private void StartServer()
     {
+		Network.maxConnections = 2;
         Network.InitializeServer(5, 25000, !Network.HavePublicAddress());
         MasterServer.RegisterHost(typeName, gameName);
     }

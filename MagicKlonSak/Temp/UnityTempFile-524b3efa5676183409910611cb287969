@@ -2,10 +2,9 @@
 -target:library
 -nowarn:0169
 -out:Temp/Assembly-CSharp.dll
--r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/WindowsStandalonePlayer/Managed/UnityEngine.dll"
 -r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll
--r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
 -define:UNITY_STANDALONE_WIN
 -define:ENABLE_MICROPHONE
 -define:ENABLE_TEXTUREID_MAP
@@ -35,9 +34,6 @@
 -define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
 -define:UNITY_4_3_4
 -define:UNITY_4_3
--define:ENABLE_PROFILER
--define:UNITY_EDITOR
--define:UNITY_EDITOR_WIN
 Assets/Prefabs/Units/BaseFlyingUnit.cs
 Assets/Prefabs/Units/BaseUnit.cs
 Assets/Scripts/Factions/Fire/Units/BaseFireUnit.cs
